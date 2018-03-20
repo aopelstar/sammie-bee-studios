@@ -13,11 +13,12 @@
     width: 100%;
     height: 100vh;
     position: fixed;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .splash-head{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     margin: 4% 0 4% 0;
     height: auto;
     width: 100%;
@@ -26,7 +27,7 @@
     border: none;
     border-width: 5px 0 5px 0;
     text-align: center;
-    font-size: 6vw;
+    font-size: 7vw;
     color: #ffea79
 
 }
@@ -63,4 +64,9 @@
     font-size: 5vw;
     border-radius: 25px;
     padding: 15px;
+    outline: none;
+}
+
+.splash-button:hover{
+    background: var( --pink)
 }
