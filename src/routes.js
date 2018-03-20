@@ -1,10 +1,12 @@
 import React from 'react';
-import { HashRouter, Switch, Route } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 import Splash from './components/Splash/Splash';
+import Home from './components/Home/Home';
 
 export default (
-    <HashRouter>
+     <Switch>
         <Route exact path ='/' component = { Splash } />
-    </HashRouter>
+        <Route path = '/home' component = { Home } />
+    </Switch>
 
 )
