@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './home.css';
 import Header from '../Header/Header'
+import Sub from '../Subheader/Subheader'
 
 
 export default class Home extends Component{
@@ -13,8 +14,10 @@ export default class Home extends Component{
 
     render(){
         return(
-            <div>
+            <div className="home-main">
                 <Header/>
+                <Sub/>
+
 
             </div>
         )
