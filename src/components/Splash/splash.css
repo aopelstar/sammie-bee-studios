@@ -14,12 +14,13 @@
     width: 100%;
     min-height: 100vh;
     height: auto;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Caveat', cursive;
+
 }
 
 .splash-head{
     display: flex;
-    justify-content: center;
+    justify-content: left;
     margin: 4% 0 4% 0;
     height: auto;
     width: 100%;
@@ -28,8 +29,9 @@
     border: none;
     border-width: 5px 0 5px 0;
     text-align: center;
-    font-size: 7vw;
-    color: #ffea79
+    font-size: 9vw;
+    color: #ffea79;
+    position: relative;
 
 }
 
@@ -41,7 +43,7 @@
 }
 
 .splash-image{
- height: auto;
+    height: auto;
 }
 
 .splash-title{
@@ -66,6 +68,7 @@
     border-radius: 25px;
     padding: 15px;
     outline: none;
+    font-family: 'Caveat', cursive;
 }
 
 .splash-button:hover{
