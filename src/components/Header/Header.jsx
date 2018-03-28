@@ -1,6 +1,7 @@
 import React from 'react';
 import './header.css';
 import logo from '../../images/logo.png';
+import { Link } from 'react-router-dom';
 
 
 export default function Header() {
@@ -14,7 +15,7 @@ export default function Header() {
                 </div>
             </div>
             <div className="header-container">
-                <img src={logo} alt="logo" className="header-logo" />
+               <Link to ='/home'> <img src={logo} alt="logo" className="header-logo"/></Link>
                 <div className="header-title">
                 Sammie Bee Studios
                 </div>

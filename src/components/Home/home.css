@@ -49,6 +49,7 @@
 
 .home-prev:hover, .home-next:hover {
     background-color: rgba(255, 132, 113,0.8);
+    text-decoration: none;
   }
 
   .home-carousel-text{

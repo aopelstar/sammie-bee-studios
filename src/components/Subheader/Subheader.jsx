@@ -6,12 +6,14 @@ import '../Header/header.css';
 export default function Header() {
     return (
         <div className="header-sub-menu">
+
                 <Link to ='/bio'><div>bio</div></Link>
-                <div>blog</div>
-                <div>promotions</div>
+                <Link to ='/blog'><div>blog</div></Link>
+                <Link to ='/promotions'><div>promotions</div></Link>
                 <Link to ='/gallery'><div>gallery</div></Link>
-                <div>shop</div>
-                <div>contact</div>
+                <Link to ='/shop'><div>shop</div></Link>
+                <Link to ='/contact'><div>contact</div></Link>
+
             </div>
     )
 }

@@ -18,6 +18,7 @@ export default (
         <Route exact path ='/' component = { Splash } />
         <Route path ='/admin' component = { Admin } />
         <Route path ='/bio' component = { Bio } />
+        <Route path ='/blog' component = { Blog } />
         <Route path ='/contact' component = { Contact } />
         <Route path ='/gallery' component = { Gallery } />
         <Route path = '/home' component = { Home } />
