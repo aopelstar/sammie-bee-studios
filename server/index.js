@@ -11,3 +11,8 @@ app.use(bodyParser.json());
 //cloudinary endpoints
 
 app.get('/api/cloudinary', cloudinary_controller.getGallery) //get the whole gallery
+
+const port = 3456
+app.listen(port, ()=>{
+    console.log(`listening on port ${port}`)
+})
