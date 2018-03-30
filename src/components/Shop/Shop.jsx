@@ -13,7 +13,7 @@ export default class Shop extends Component{
 
     render(){
         return(
-            <div>
+            <div className="shop-main">
                 <Header />
                 <SubHeader />
                 

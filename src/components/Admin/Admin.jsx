@@ -5,7 +5,7 @@ export default class Admin extends Component{
 
     render(){
         return(
-            <div>
+            <div className="admin-main">
                 
             </div>
         )

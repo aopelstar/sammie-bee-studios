@@ -5,7 +5,7 @@ import SubHeader from '../Subheader/Subheader';
 
 export default function Promotions() {
     return(
-        <div>
+        <div className="promotions-main">
             <Header/>
             <SubHeader/>
 

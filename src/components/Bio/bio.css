@@ -1,0 +1,31 @@
+.bio-main{
+    background-image: url("../../images/paper.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    font-family: 'Caveat', cursive;
+    display: flex;
+    flex-direction: column;
+}
+
+.bio-container{
+    margin-bottom: 1%;
+}
+.bio-image-container{
+    margin: 1% 2%;
+}
+
+.bio-image{
+    float: left;
+    height: 400px;
+    width: 450px;
+    margin-right: 2%;
+
+}
+
+.bio-desc{
+    font-size: 4vw;
+    color: var(--orange);
+}

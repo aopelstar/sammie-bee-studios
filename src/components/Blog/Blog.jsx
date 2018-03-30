@@ -6,7 +6,7 @@ import SubHeader from '../Subheader/Subheader';
 export default class Blog extends Component{
     render(){
         return(
-            <div>   
+            <div className="blog-main">   
             <Header />
             <SubHeader />
                 

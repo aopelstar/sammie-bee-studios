@@ -5,7 +5,7 @@ import SubHeader from '../Subheader/Subheader';
 
 export default function Contact() {
     return(
-        <div>
+        <div className="contact-main">
         <Header/>
         <SubHeader/>
         

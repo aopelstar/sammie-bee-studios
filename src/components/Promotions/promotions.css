@@ -1,0 +1,11 @@
+.promotions-main{
+    background-image: url("../../images/paper.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    font-family: 'Caveat', cursive;
+    display: flex;
+    flex-direction: column;
+}
