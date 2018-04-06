@@ -14,10 +14,14 @@ export default function Splash() {
             <img src = {logo} alt="logo" className="splash-image"/>
             <div className="splash-title">Sammie Bee Studios</div>
         </div>
-        <div className="splash-video"><iframe width="560" height="315" src="https://res.cloudinary.com/drapplestar/video/upload/v1522368687/Gallery/final.mp4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
-
+        <div className="splash-video">
+            <iframe width="560" height="315" src="https://res.cloudinary.com/drapplestar/video/upload/v1522368687/Gallery/final.mp4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="true" loop="true" controls="false">
+            </iframe>
+        </div>
+        
                 <Link to = '/home'><button className ="splash-button">Welcome!</button></Link>
             </div>
+            
 
         </div>
     )

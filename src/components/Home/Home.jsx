@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './home.css';
 import Header from '../Header/Header';
 import Sub from '../Subheader/Subheader';
+import Contact from '../Contact/Contact';
 import image1 from '../../images/img1.JPG';
 import image3 from '../../images/img3.JPG';
 import image4 from '../../images/img4.JPG';
@@ -43,10 +44,11 @@ export default class Home extends Component {
                 <div className="home-container">
                     <div className="home-welcome">
                         Welcome! Feel free to take a look around! blah blah blah, content
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, incidunt aliquid inventore in quibusdam non iste excepturi quasi quidem impedit a. Quidem aspernatur rem voluptatum delectus autem minima maiores libero.
                     </div>
                     <div className="home-carousel">
                         <div className={this.state.slideIndex === 1 ? "fade" : "home-carousel-slides"}>
-                            <img src="https://res.cloudinary.com/drapplestar/image/upload/v1521739448/Gallery/IMG_0527.jpg" alt="image1" className="home-carousel-image" />
+                            <img src="https://res.cloudinary.com/drapplestar/image/upload/v1521739422/Gallery/IMG_0087.jpg" alt="image1" className="home-carousel-image" />
                             <div className="home-carousel-text"></div>
                         </div>
                         <div className={this.state.slideIndex === 2 ? "fade" : "home-carousel-slides"}>
@@ -75,9 +77,9 @@ export default class Home extends Component {
                         </div>
                     </div>
                 </div>
+                
 
-
-
+            <Contact />
             </div>
         )
     }

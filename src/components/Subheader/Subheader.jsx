@@ -12,7 +12,7 @@ export default function Header() {
                 <Link to ='/promotions'><div>promotions</div></Link>
                 <Link to ='/gallery'><div>gallery</div></Link>
                 <Link to ='/shop'><div>shop</div></Link>
-                <Link to ='/contact'><div>contact</div></Link>
+                
 
             </div>
     )

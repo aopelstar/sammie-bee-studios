@@ -26,6 +26,7 @@
 }
 
 .bio-desc{
-    font-size: 4vw;
+    font-size: 4.25vw;
     color: var(--orange);
+    font-weight: bolder;
 }

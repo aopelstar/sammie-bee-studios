@@ -6,7 +6,6 @@ import Gallery from './components/Gallery/Gallery';
 import Bio from './components/Bio/Bio';
 import Admin from './components/Admin/Admin';
 import Blog from './components/Blog/Blog';
-import Contact from './components/Contact/Contact';
 import Promotions from './components/Promotions/Promotions';
 import Shop from './components/Shop/Shop';
 
@@ -19,7 +18,6 @@ export default (
         <Route path ='/admin' component = { Admin } />
         <Route path ='/bio' component = { Bio } />
         <Route path ='/blog' component = { Blog } />
-        <Route path ='/contact' component = { Contact } />
         <Route path ='/gallery' component = { Gallery } />
         <Route path = '/home' component = { Home } />
         <Route path = '/promotions' component = { Promotions } />
