@@ -3,7 +3,6 @@ import './home.css';
 import Header from '../Header/Header';
 import Sub from '../Subheader/Subheader';
 import Contact from '../Contact/Contact';
-import image1 from '../../images/img1.JPG';
 import image3 from '../../images/img3.JPG';
 import image4 from '../../images/img4.JPG';
 import image5 from '../../images/img5.JPG';

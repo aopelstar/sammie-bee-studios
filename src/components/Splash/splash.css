@@ -12,16 +12,16 @@
     background-size: cover;
     background-attachment: fixed;
     width: 100%;
-    min-height: 100vh;
-    height: auto;
     font-family: 'Caveat', cursive;
+    
 
 }
 
 .splash-head{
+    position: absolute;
     display: flex;
     justify-content: left;
-    margin: 4% 0 4% 0;
+    top: 50px;
     height: auto;
     width: 100%;
     background: #ff8471;
@@ -40,6 +40,7 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    
 }
 
 .splash-image{
@@ -51,24 +52,36 @@
 }
 
 .splash-video{
+    min-height: 100vh;
     height: auto;
-    width: 100%;
-    background: radial-gradient( rgba(172, 232, 98, 1), rgba(172, 232, 98, 0));
+    width: 100vw;
     display: flex;
     justify-content: center;
-    padding: 1% 0;
+    overflow: hidden;
+
+}
+
+.splash-button-container{
+   
+    
 
 }
 
 .splash-button{
     background: rgba(255, 132, 113, .5);
+    position: absolute;
+    bottom: 50px;
     color: #ffea79;
-    margin: 10% 0 2% 0;
     font-size: 5vw;
     border-radius: 25px;
     padding: 15px;
     outline: none;
     font-family: 'Caveat', cursive;
+    outline: none;
+    border: none;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
 }
 
 .splash-button:hover{
