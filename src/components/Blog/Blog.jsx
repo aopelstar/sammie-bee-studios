@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './blog.css';
 import Header from '../Header/Header';
 import SubHeader from '../Subheader/Subheader';
+import Contact from '../Contact/Contact'
 
 export default class Blog extends Component{
     render(){
@@ -10,6 +11,7 @@ export default class Blog extends Component{
             <Header />
             <SubHeader />
                 
+            <Contact />
             </div>
         )
     }

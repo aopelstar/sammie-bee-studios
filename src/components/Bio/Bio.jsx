@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './bio.css';
 import Header from '../Header/Header';
 import SubHeader from '../Subheader/Subheader';
+import Contact from '../Contact/Contact'
 import image from '../../images/Samantha.jpg'
 
 export default class Bio extends Component {
@@ -45,6 +46,7 @@ export default class Bio extends Component {
                         Tenetur placeat maiores dolorem nesciunt!
                     </div>
                 </div>
+                <Contact/>
             </div>
         )
     }
