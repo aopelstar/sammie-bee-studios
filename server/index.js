@@ -1,27 +1,46 @@
-require('dotenv').config();
 const express = require('express');
 const bodyParser = require('body-parser');
 const cloudinary = require('cloudinary');
 const massive = require('massive');
 const nodemailer = require('nodemailer');
-const cloudinary_controller = require('./controllers/cloudinary_cont')
+const cloudinary_controller = require('./controllers/cloudinary_cont');
+const cors = require('cors');
+const dotenv = require('dotenv').config();
 
 const app = express();
 app.use(bodyParser.json());
+app.use( cors() )
 
 //cloudinary endpoints
 
 //app.get('/api/cloudinary', cloudinary_controller.getGallery) //get the whole gallery
 
 //nodemailer shtuff
-app.post('api/getemail', (req, res)=> {
+app.post('/api/sendEmail', (req, res) => {
+    console.log(req.body);
     nodemailer.createTestAccount((err, account) => {
         let transporter = nodemailer.createTransport({
-            service: 'Gmail',
+            service: 'gmail',
             auth: {
+                type: "login",
                 user: process.env.MY_EMAIL,
                 pass: process.env.MY_LOCK
             }
+        });
+
+        let mailOptions = {
+            from: `${req.body.name} <${req.body.from}>`, 
+            to: process.env.MY_EMAIL,
+            subject: "website communication", 
+            html:`<div><p> Email: ${req.body.from}<br/><br/>${req.body.message}</p></div>`
+        };
+
+        transporter.sendMail(mailOptions, (error, info) => {
+            if (error) {
+                return console.log(error);
+            }
+            res.send('done')
+        });
     });
 })
 

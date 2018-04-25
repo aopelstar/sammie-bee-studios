@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './contact.css';
 import email from '../../images/email.png';
+import axios from 'axios';
 
 
 
@@ -10,7 +11,7 @@ export default class Contact extends Component {
         this.state = {
             contactTrue: true,
             name: "",
-            email: "",
+            from: "",
             message: ""
         }
     }
@@ -24,6 +25,21 @@ export default class Contact extends Component {
     handleChange(key, val){
         this.setState({
             [key]: val
+        })
+    }
+
+    submit(){
+        let body = {
+            name: this.state.name,
+            from: this.state.from,
+            message: this.state.message
+        }
+        let promise = axios.post('http://localhost:5432/api/sendEmail', body)
+        promise.then( ()=>{
+            this.setState({
+                contactTrue: true
+            })
+            alert( "Your message has been sent")
         })
     }
 
@@ -57,7 +73,7 @@ export default class Contact extends Component {
                                 Email:
                         </div>
                             <div className="contact-email-input">
-                                <input type="email" onChange={(e) => this.handleChange("email", e.target.value)}/>
+                                <input type="email" onChange={(e) => this.handleChange("from", e.target.value)}/>
                             </div>
                         </div>
                         <div className="contact-message">
@@ -69,7 +85,7 @@ export default class Contact extends Component {
                             </div>
                         </div>
                         <div className="contact-buttons">
-                            <button className="contact-submit">
+                            <button className="contact-submit" onClick={() => this.submit()}>
                                Submit
                         </button>
                             <button className="contact-nevermind" onClick={() => this.clickChange()}>

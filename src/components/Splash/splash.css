@@ -79,13 +79,14 @@
     font-family: 'Caveat', cursive;
     outline: none;
     border: none;
-    left: 0;
-    right: 0;
+    left: 45%;
     margin: 0 auto;
+    transition: 2s;
 }
 
 .splash-button:hover{
     background: rgba(255, 132, 113, .75);
     text-decoration: underline;
     cursor: pointer;
+    transition: 2s;
 }

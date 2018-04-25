@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './shop.css';
 import Header from '../Header/Header';
 import SubHeader from '../Subheader/Subheader';
+import Contact from '../Contact/Contact';
 
 export default class Shop extends Component{
     constructor(){
@@ -16,7 +17,7 @@ export default class Shop extends Component{
             <div className="shop-main">
                 <Header />
                 <SubHeader />
-                
+                <Contact />
             </div>
         )
     }

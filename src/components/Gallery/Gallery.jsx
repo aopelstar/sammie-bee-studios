@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import Header from '../Header/Header';
 import SubHeader from '../Subheader/Subheader';
-import './gallery.css'
+import './gallery.css';
+import Contact from '../Contact/Contact';
 
 
 export default class Gallery extends Component{
@@ -28,6 +29,7 @@ export default class Gallery extends Component{
                 <Header/>
                 <SubHeader/>
 
+                <Contact />
             </div>
         )
     }
