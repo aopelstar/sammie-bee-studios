@@ -9,3 +9,33 @@
     display: flex;
     flex-direction: column;
 }
+
+.shop-photo{
+    width: 250px;
+    height: 250px;
+    margin: 50px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+}
+
+.shop-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: rgba(255, 132, 113, .75);
+    margin: 15px auto;
+    border: var(--yellow) solid 1px;
+    border-radius: 10px;
+}
+
+.shop-component{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.shop-desc-container{
+    text-align: center;
+    font-size: 4vw;
+    color: var(--yellow);
+    margin-bottom: 25px;
+}

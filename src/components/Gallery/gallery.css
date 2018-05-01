@@ -9,3 +9,20 @@
     display: flex;
     flex-direction: column;
 }
+
+.gallery-container{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.gallery-photo-container{
+    margin: 0 auto;
+}
+
+.gallery-photo{
+    width: 250px;
+    height: 250px;
+    margin: 50px;
+    border-radius: 10px;
+}

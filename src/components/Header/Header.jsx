@@ -10,8 +10,8 @@ export default function Header() {
             <div className="header-top-menu">
                 <div className="header-search">search?</div>
                 <div className="header-top-admin">
-                    <div>favorites</div>
-                    <div>login</div>
+                    <Link to = '/favorites'><div>favorites</div> </Link>
+                    <Link to ='/admin'><div>login</div></Link>
                 </div>
             </div>
             <div className="header-container">

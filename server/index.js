@@ -13,11 +13,11 @@ app.use( cors() )
 
 //cloudinary endpoints
 
-//app.get('/api/cloudinary', cloudinary_controller.getGallery) //get the whole gallery
+app.get('/api/cloudinary', cloudinary_controller.getGallery) //get the whole gallery
+app.get('/api/shop', cloudinary_controller.getShop) //get the whole shop
 
 //nodemailer shtuff
 app.post('/api/sendEmail', (req, res) => {
-    console.log(req.body);
     nodemailer.createTestAccount((err, account) => {
         let transporter = nodemailer.createTransport({
             service: 'gmail',

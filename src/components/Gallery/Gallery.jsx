@@ -14,21 +14,29 @@ export default class Gallery extends Component{
         }
     }
 
-    componentDidMount(){
-        let promise = axios.get('/api/cloudinary')
-        promise.then((response) => {
+    async componentDidMount(){
+        await axios.get('http://localhost:5432/api/cloudinary').then( ( {data} ) => {
             this.setState({
-                data: response
+                data: data.resources
             })
         })
     }
 
     render(){
+        let homeGallery = this.state.data.map( (pics, i) => {
+            return(
+                <div key = {i} className="gallery-photo-container">
+                    <img src={pics.url} className="gallery-photo" alt="some photo"/>
+                </div>
+            )
+        })
         return(
             <div className="gallery-main">
                 <Header/>
                 <SubHeader/>
-
+                    <div className="gallery-container">  
+                        {homeGallery}
+                    </div>
                 <Contact />
             </div>
         )

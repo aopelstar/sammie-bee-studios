@@ -8,6 +8,7 @@ import Admin from './components/Admin/Admin';
 import Blog from './components/Blog/Blog';
 import Promotions from './components/Promotions/Promotions';
 import Shop from './components/Shop/Shop';
+import Favorites from './components/Favorites/Favorites';
 
 
 
@@ -18,6 +19,7 @@ export default (
         <Route path ='/admin' component = { Admin } />
         <Route path ='/bio' component = { Bio } />
         <Route path ='/blog' component = { Blog } />
+        <Route path ='/favorites' component = { Favorites } />
         <Route path ='/gallery' component = { Gallery } />
         <Route path = '/home' component = { Home } />
         <Route path = '/promotions' component = { Promotions } />

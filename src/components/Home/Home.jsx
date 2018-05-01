@@ -43,7 +43,10 @@ export default class Home extends Component {
                 <div className="home-container">
                     <div className="home-welcome">
                         Welcome! Feel free to take a look around! blah blah blah, content
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, incidunt aliquid inventore in quibusdam non iste excepturi quasi quidem impedit a. Quidem aspernatur rem voluptatum delectus autem minima maiores libero.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, 
+                        incidunt aliquid inventore in quibusdam non iste excepturi quasi 
+                        quidem impedit a. Quidem aspernatur rem voluptatum delectus autem 
+                        minima maiores libero.
                     </div>
                     <div className="home-carousel">
                         <div className={this.state.slideIndex === 1 ? "fade" : "home-carousel-slides"}>
