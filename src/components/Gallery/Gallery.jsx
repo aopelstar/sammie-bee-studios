@@ -47,7 +47,7 @@ export default class Gallery extends Component{
     render(){
         let homeGallery = this.state.data.map( (pics, i) => {
             return(
-                <div key = {i} className="gallery-photo-container" onClick={ () => window.open( "{pics.url}", "_blank")}>
+                <div key = {i} className="gallery-photo-container" onClick={ () => window.open( {pics.url}, "_blank")}>
                     <img src={pics.url} className="gallery-photo" alt="some photo"/>
                     {/* <Modal isOpen={this.state.modalIsOpen} onRequestClose={this.closeModal} style={customStyles}>
                     <div>
