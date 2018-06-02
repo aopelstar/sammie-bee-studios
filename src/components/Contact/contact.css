@@ -38,14 +38,15 @@
     border-bottom: none;
     border-radius: 25px 25px 0 0;
     z-index: 7;
+    transition: 2s
     
 
                         
 }
 
 .contact-window-hidden{
-    display: none;
-    transition: 5s
+    bottom: -450px;
+    transition: 2s
 }
 
 .contact-info{

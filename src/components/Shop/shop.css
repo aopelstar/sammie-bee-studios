@@ -18,24 +18,45 @@
     border-radius: 10px;
 }
 
-.shop-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background: rgba(255, 132, 113, .75);
-    margin: 15px auto;
-    border: var(--yellow) solid 1px;
-    border-radius: 10px;
-}
-
 .shop-component{
     display: flex;
     flex-wrap: wrap;
 }
 
+.shop-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: rgba(255, 132, 113, .75);
+    justify-content: center;
+    margin: 15px auto;
+    border: var(--yellow) solid 1px;
+    border-radius: 10px;
+}
+
+
 .shop-desc-container{
     text-align: center;
-    font-size: 4vw;
+    font-size: 3vw;
     color: var(--yellow);
     margin-bottom: 25px;
+}
+
+.shop-desc-container > div {
+    margin-top: 15px;
+}
+
+.cart-button{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.heart-button{
+    background: none;
+    
+}
+
+.heart-icon{
+    height: 50px;
 }

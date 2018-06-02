@@ -81,3 +81,19 @@ a{
     text-decoration: none;
     color: var(--yellow);
 }
+
+.cart-logo{
+    height: 20px;
+    width: 20px;
+    margin: auto;
+    
+}
+
+.cart-icon-container{
+    height: 25px;
+    width: 25px;
+    background: var(--yellow);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+}

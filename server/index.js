@@ -44,7 +44,7 @@ app.post('/api/sendEmail', (req, res) => {
     });
 })
 
-const port = 5432
+const port = process.env.SERVER_PORT || 5431
 app.listen(port, ()=>{
     console.log(`listening on port ${port}`)
 })

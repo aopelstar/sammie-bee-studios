@@ -50,7 +50,7 @@ export default class Home extends Component {
                     </div>
                     <div className="home-carousel">
                         <div className={this.state.slideIndex === 1 ? "fade" : "home-carousel-slides"}>
-                            <img src="https://res.cloudinary.com/drapplestar/image/upload/v1521739422/Gallery/IMG_0087.jpg" alt="image1" className="home-carousel-image" />
+                            <img src="http://res.cloudinary.com/drapplestar/image/upload/v1521739444/Gallery/IMG_0458.jpg" alt="image1" className="home-carousel-image" />
                             <div className="home-carousel-text"></div>
                         </div>
                         <div className={this.state.slideIndex === 2 ? "fade" : "home-carousel-slides"}>
@@ -66,7 +66,7 @@ export default class Home extends Component {
                             <div className="home-carousel-text"></div>
                         </div>
                         <div className={this.state.slideIndex === 5 ? "fade" : "home-carousel-slides"}>
-                            <img src={image6} alt="image1" className="home-carousel-image" />
+                            <img src="http://res.cloudinary.com/drapplestar/image/upload/v1521739425/Gallery/IMG_0062.jpg" alt="image1" className="home-carousel-image" />
                             <div className="home-carousel-text"></div>
                         </div>
                         <div className={this.state.slideIndex === 6 ? "fade" : "home-carousel-slides"}>

@@ -26,3 +26,8 @@
     margin: 50px;
     border-radius: 10px;
 }
+
+.modal-photo{
+    height: 500px;
+    width: 500px
+}
